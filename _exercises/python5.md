@@ -4,6 +4,7 @@ title: Python Assignment 5
 description: Select exercises from Python Crash Course
 ---
 
+
 ```python
 #8-1
 def display_message():

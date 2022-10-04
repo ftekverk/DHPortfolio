@@ -4,7 +4,6 @@ title: Python Assignment 1
 description: Select exercises from Python Crash Course
 ---
 
-
 ```python
 # 2-1
 message = "This is a message!"
@@ -46,14 +45,21 @@ print(name.upper())
 print(name.title())
 ```
 
+    ernest hemingway
+    ERNEST HEMINGWAY
+    Ernest Hemingway
+
+
 
 ```python
-
 # 2-5
 author = "Ernest Hemingway"
 print(author + ' once said, "The world is a fine place and worth fighting for."')
 
 ```
+
+    Ernest Hemingway once said, "The world is a fine place and worth fighting for."
+
 
 
 ```python
@@ -63,6 +69,9 @@ famous_person = "Ernest Hemingway"
 message = famous_person + ' once said, "The world is a fine place and worth fighting for."'
 print(message)
 ```
+
+    Ernest Hemingway once said, "The world is a fine place and worth fighting for."
+
 
 
 ```python
@@ -74,3 +83,9 @@ print(name.lstrip())
 print(name.rstrip())
 print(name.strip())
 ```
+
+     Ernest Hemingway 
+    Ernest Hemingway 
+     Ernest Hemingway
+    Ernest Hemingway
+

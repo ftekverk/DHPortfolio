@@ -4,13 +4,18 @@ title: Python Assignment 2
 description: Select exercises from Python Crash Course
 ---
 
-
 ```python
 # 3-1
 friendsNames = ["Ryan", "Adam", "Joe", "Josh"]
 for name in friendsNames:
     print(name)
 ```
+
+    Ryan
+    Adam
+    Joe
+    Josh
+
 
 
 ```python
@@ -19,6 +24,12 @@ for name in friendsNames:
     print("Hello " + name + "!")
 ```
 
+    Hello Ryan!
+    Hello Adam!
+    Hello Joe!
+    Hello Josh!
+
+
 
 ```python
 # 3-3
@@ -26,6 +37,12 @@ transport = ["Bike", "Car", "Plane", "Boat"]
 for elem in transport:
     print("I would like to own a " + elem + ".")
 ```
+
+    I would like to own a Bike.
+    I would like to own a Car.
+    I would like to own a Plane.
+    I would like to own a Boat.
+
 
 
 ```python

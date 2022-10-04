@@ -20,6 +20,12 @@ print(finn['age'])
 print(finn['city'])
 ```
 
+    finn
+    tekverk
+    21
+    boston
+
+
 
 ```python
 #6-2
@@ -36,6 +42,13 @@ print(f"marceline's favorite number is {favorite_numbers['marceline']}")
 print(f"ice king's favorite number is {favorite_numbers['ice king']}")
 print(f"lsp's favorite number is {favorite_numbers['lsp']}")
 ```
+
+    finn's favorite number is 7
+    jake's favorite number is 8
+    marceline's favorite number is 9
+    ice king's favorite number is 10
+    lsp's favorite number is 11
+
 
 
 ```python

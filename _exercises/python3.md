@@ -134,6 +134,9 @@ else:
     print("the person is an elder")
 ```
 
+    the person is a kid
+
+
 
 ```python
 # 5-7
