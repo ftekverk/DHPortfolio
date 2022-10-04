@@ -1,7 +1,7 @@
 ---
 layout: page
-title: HathiTrust Bookworm
-description: Here I evaluate HathiTrust's Bookworm tool.
+title: Enslaved
+description: Evaluation of the "Enslaved" Digital Humanities project.
 ---
 ## Source
 (https://enslaved.org)

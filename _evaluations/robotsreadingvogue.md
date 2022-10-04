@@ -1,7 +1,7 @@
 ---
 layout: page
-title: HathiTrust Bookworm
-description: Here I evaluate HathiTrust's Bookworm tool.
+title: Robots Reading Vogue
+description: Here I evaluate the "Robots Reading Vogue" DH project.
 ---
 ## Source
 (http://dh.library.yale.edu/projects/vogue/)
