@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Week 10 Assingment
+title: ArcGIS
 description: GIS
 ---
 

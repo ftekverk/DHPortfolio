@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Chronicling America
+title: Chronicling America API
 description: Using API Calls
 ---
 
