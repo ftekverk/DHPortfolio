@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Python Assignment 2
-description: Select exercises from Python Crash Course
+description: Select exercises from Python Crash Course Chapter 3
 ---
 
 ```python

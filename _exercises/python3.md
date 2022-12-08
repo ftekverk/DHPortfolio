@@ -1,213 +1,112 @@
 ---
 layout: page
 title: Python Assignment 3
-description: Select exercises from Python Crash Course
+description: Select exercises from Python Crash Course Chapter 4
 ---
 
 
-```python
-# 5-1
-name = 'finn'
-print("Is name == 'finn'? I predict True.")
-print(name == 'finn')
-
-print("\nIs name == 'Finn'? I predict False.")
-print(name == 'Finn')
-```
-
-    Is name == 'finn'? I predict True.
-    True
-    
-    Is name == 'Finn'? I predict False.
-    False
-
 
 
 ```python
-# 5-2
-name = 'finn'
-lastName = 'tekverk'
-print("Is name == 'finn' and lastName == 'tekverk'? I predict True.")
-print(name == 'finn' and lastName == 'tekverk')
+# 4-1
+pizzas = ["Pepperoni", "Cheese", "Buffalo Chicken"]
+for pizza in pizzas:
+    print("I like " + pizza + " pizza.")
 
-print("Is name == lastName? I predict False.")
-print(name == lastName)
-
-upperName = 'Finn'
-print("Is name == upperName? I predict False.")
-print(name == upperName)
-
-# lower() method
-print("Is name == upperName.lower()? I predict True.")
-print(name == upperName.lower())
-
-print("Is name.lower() == upperName? I predict False.")
-print(name.lower() == upperName)
-
-# numerical tests
-age = 18
-print("Is age == 18? I predict True.")
-print(age == 18)
-
-print("Is age != 18? I predict False.")
-print(age != 18)
-
-# and and or
-print("Is age == 18 and name == 'finn'? I predict True.")
-print(age == 18 and name == 'finn')
-
-print("Is age == 18 or name == 'finn'? I predict True.")
-print(age == 18 or name == 'finn')
-
-print("Is age == 19 or name == 'Finn'? I predict True.")
-print(age == 19 or name == 'Finn')
-
-print("Is age == 19 or name == 'Sam'? I predict False.")
-print(age == 19 or name == 'Sam')
-
-
-
-# check if a value is in a list
-names = ['finn', 'sam', 'joe']
-print("Is 'finn' in names? I predict True.")
-print('finn' in names)
-
-print("Is 'david' in names? I predict False.")
-print('david' in names)
-
-# check if a value is not in a list
-print("Is 'finn' not in names? I predict False.")
-print('finn' not in names)
-
-print("Is 'david' not in names? I predict True.")
-print('david' not in names)
+print("I really love pizza!")
 ```
 
-    Is name == 'finn' and lastName == 'tekverk'? I predict True.
-    True
-    Is name == lastName? I predict False.
-    False
-    Is name == upperName? I predict False.
-    False
-    Is name == upperName.lower()? I predict True.
-    True
-    Is name.lower() == upperName? I predict False.
-    False
-    Is age == 18? I predict True.
-    True
-    Is age != 18? I predict False.
-    False
-    Is age == 18 and name == 'finn'? I predict True.
-    True
-    Is age == 18 or name == 'finn'? I predict True.
-    True
-    Is age == 19 or name == 'Finn'? I predict True.
-    False
-    Is age == 19 or name == 'Sam'? I predict False.
-    False
-    Is 'finn' in names? I predict True.
-    True
-    Is 'david' in names? I predict False.
-    False
-    Is 'finn' not in names? I predict False.
-    False
-    Is 'david' not in names? I predict True.
-    True
+    I like Pepperoni pizza.
+    I like Cheese pizza.
+    I like Buffalo Chicken pizza.
+    I really love pizza!
 
 
 
 ```python
-# 5-6
-age = 10
+# 4-2
+animals = ["Dog", "Bird", "Cat"]
+for animal in animals:
+    print("A " + animal + " would make a great pet.")
 
-if age < 2:
-    print("the person is a baby")
-elif age >= 2 and age < 4:
-    print("the person is a toddler")
-elif age >= 4 and age < 13:
-    print("the person is a kid")
-elif age >= 13 and age < 20:
-    print("the person is a teenager")
-elif age >= 20 and age < 65:
-    print("the person is an adult")
-else:
-    print("the person is an elder")
+print("Any of these animals would make a great pet!")
+
 ```
 
-    the person is a kid
+    A Dog would make a great pet.
+    A Bird would make a great pet.
+    A Cat would make a great pet.
+    Any of these animals would make a great pet!
 
 
 
 ```python
-# 5-7
-favorite_fruits = ['apple', 'banana', 'strawberry']
+# 4-6
+list = range(1, 21, 2)
 
-if 'apple' in favorite_fruits:
-    print("You really like apples!")
-if 'banana' in favorite_fruits:
-    print("You really like bananas!")
-if 'strawberry' in favorite_fruits:
-    print("You really like strawberries!")
-if 'orange' in favorite_fruits:
-    print("You really like oranges!")
-if 'watermelon' in favorite_fruits:
-    print("You really like watermelons!")
+for num in list:
+    print(num)
 ```
 
-    You really like apples!
-    You really like bananas!
-    You really like strawberries!
+    1
+    3
+    5
+    7
+    9
+    11
+    13
+    15
+    17
+    19
 
 
 
 ```python
-# 5-8
+# 4-10
+print("The first three items in the list are:")
+print(places[:3])
 
-usernames = ['admin', 'finn', 'sam', 'joe', 'david']
+print("Three items from the middle of the list are:")
+print(places[1:4])
 
-for username in usernames:
-    if username == 'admin':
-        print("Hello admin, would you like to see a status report?")
-    else:
-        print("Hello " + username + ", thank you for logging in again.")
+print("The last three items in the list are:")
+print(places[-3:])
 ```
 
-    Hello admin, would you like to see a status report?
-    Hello finn, thank you for logging in again.
-    Hello sam, thank you for logging in again.
-    Hello joe, thank you for logging in again.
-    Hello david, thank you for logging in again.
+    The first three items in the list are:
+    ['Tokyo', 'Paris', 'New York']
+    Three items from the middle of the list are:
+    ['Paris', 'New York', 'London']
+    The last three items in the list are:
+    ['New York', 'London', 'Cairo']
 
 
 
 ```python
-# 5-9
+# 4-11
 
-usernames = []
+friend_pizzas = pizzas[:]
 
-if len(usernames) == 0:
-    print("We need to find some users!")
+pizzas.append("Hawaiian")
+friend_pizzas.append("Meat Lovers")
+
+print("My favorite pizzas are:")
+for pizza in pizzas:
+    print(pizza)
+
+print("My friend's favorite pizzas are:")
+for pizza in friend_pizzas:
+    print(pizza)
 ```
 
-    We need to find some users!
-
-
-
-```python
-# 5-10
-current_users = ['admin', 'finn', 'sam', 'joe', 'david']
-new_users = ['finn', 'joe', 'adam', 'ryan', 'josh']
-
-for new_user in new_users:
-    if new_user in current_users:
-        print("The username " + new_user + " has already been used. Enter a new username.")
-    else:
-        print("The username " + new_user + " is available.")
-```
-
-    The username finn has already been used. Enter a new username.
-    The username joe has already been used. Enter a new username.
-    The username adam is available.
-    The username ryan is available.
-    The username josh is available.
+    My favorite pizzas are:
+    Pepperoni
+    Cheese
+    Buffalo Chicken
+    Hawaiian
+    My friend's favorite pizzas are:
+    Pepperoni
+    Cheese
+    Buffalo Chicken
+    Meat Lovers
 

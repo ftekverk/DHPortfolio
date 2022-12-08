@@ -1,231 +1,213 @@
 ---
 layout: page
-title: Python Assignment 4
-description: Select exercises from Python Crash Course
+title: Python Assignment 4 
+description: Select exercises from Python Crash Course Chapter 5
 ---
 
 
 ```python
-#6-1
+# 5-1
+name = 'finn'
+print("Is name == 'finn'? I predict True.")
+print(name == 'finn')
 
-finn = {'first_name' : 'finn',
-        'last_name' : 'tekverk',
-        'age' : 21,
-        'city' : 'boston'}
-
-
-print(finn['first_name'])
-print(finn['last_name'])
-print(finn['age'])
-print(finn['city'])
+print("\nIs name == 'Finn'? I predict False.")
+print(name == 'Finn')
 ```
 
-    finn
-    tekverk
-    21
-    boston
+    Is name == 'finn'? I predict True.
+    True
+    
+    Is name == 'Finn'? I predict False.
+    False
 
 
 
 ```python
-#6-2
+# 5-2
+name = 'finn'
+lastName = 'tekverk'
+print("Is name == 'finn' and lastName == 'tekverk'? I predict True.")
+print(name == 'finn' and lastName == 'tekverk')
 
-favorite_numbers = {'finn' : 7,
-                    'jake' : 8,
-                    'marceline' : 9,
-                    'ice king' : 10,
-                    'lsp' : 11}
+print("Is name == lastName? I predict False.")
+print(name == lastName)
 
-print(f"finn's favorite number is {favorite_numbers['finn']}")
-print(f"jake's favorite number is {favorite_numbers['jake']}")
-print(f"marceline's favorite number is {favorite_numbers['marceline']}")
-print(f"ice king's favorite number is {favorite_numbers['ice king']}")
-print(f"lsp's favorite number is {favorite_numbers['lsp']}")
+upperName = 'Finn'
+print("Is name == upperName? I predict False.")
+print(name == upperName)
+
+# lower() method
+print("Is name == upperName.lower()? I predict True.")
+print(name == upperName.lower())
+
+print("Is name.lower() == upperName? I predict False.")
+print(name.lower() == upperName)
+
+# numerical tests
+age = 18
+print("Is age == 18? I predict True.")
+print(age == 18)
+
+print("Is age != 18? I predict False.")
+print(age != 18)
+
+# and and or
+print("Is age == 18 and name == 'finn'? I predict True.")
+print(age == 18 and name == 'finn')
+
+print("Is age == 18 or name == 'finn'? I predict True.")
+print(age == 18 or name == 'finn')
+
+print("Is age == 19 or name == 'Finn'? I predict True.")
+print(age == 19 or name == 'Finn')
+
+print("Is age == 19 or name == 'Sam'? I predict False.")
+print(age == 19 or name == 'Sam')
+
+
+
+# check if a value is in a list
+names = ['finn', 'sam', 'joe']
+print("Is 'finn' in names? I predict True.")
+print('finn' in names)
+
+print("Is 'david' in names? I predict False.")
+print('david' in names)
+
+# check if a value is not in a list
+print("Is 'finn' not in names? I predict False.")
+print('finn' not in names)
+
+print("Is 'david' not in names? I predict True.")
+print('david' not in names)
 ```
 
-    finn's favorite number is 7
-    jake's favorite number is 8
-    marceline's favorite number is 9
-    ice king's favorite number is 10
-    lsp's favorite number is 11
+    Is name == 'finn' and lastName == 'tekverk'? I predict True.
+    True
+    Is name == lastName? I predict False.
+    False
+    Is name == upperName? I predict False.
+    False
+    Is name == upperName.lower()? I predict True.
+    True
+    Is name.lower() == upperName? I predict False.
+    False
+    Is age == 18? I predict True.
+    True
+    Is age != 18? I predict False.
+    False
+    Is age == 18 and name == 'finn'? I predict True.
+    True
+    Is age == 18 or name == 'finn'? I predict True.
+    True
+    Is age == 19 or name == 'Finn'? I predict True.
+    False
+    Is age == 19 or name == 'Sam'? I predict False.
+    False
+    Is 'finn' in names? I predict True.
+    True
+    Is 'david' in names? I predict False.
+    False
+    Is 'finn' not in names? I predict False.
+    False
+    Is 'david' not in names? I predict True.
+    True
 
 
 
 ```python
-#6-3
-glossary = {'list' : 'an array of items in order',
-            'dictionary' : 'a non-ordered set of key-value pairs',
-            'print' : 'a function to display data',
-            'if statement' : 'a statement to evaluate a condition',
-            'for loop' : 'a loop that runs a number of times',
-            'while loop' : 'a loop that runs until a condition is met',
-            'function' : 'a block of code that can be called',
-            'sort' : 'a function to sort a list',
-            'strip' : 'a function to remove chars from a string',
-            'fstring' : 'a string that can be formatted'}
+# 5-6
+age = 10
 
-
-print("List: " + glossary['list'])
-print("Dictionary: " + glossary['dictionary'])
-print("Print: " + glossary['print'])
-print("If statement: " + glossary['if statement'])
-print("For loop: " + glossary['for loop'])
+if age < 2:
+    print("the person is a baby")
+elif age >= 2 and age < 4:
+    print("the person is a toddler")
+elif age >= 4 and age < 13:
+    print("the person is a kid")
+elif age >= 13 and age < 20:
+    print("the person is a teenager")
+elif age >= 20 and age < 65:
+    print("the person is an adult")
+else:
+    print("the person is an elder")
 ```
 
-    List: an array of items in order
-    Dictionary: a non-ordered set of key-value pairs
-    Print: a function to display data
-    If statement: a statement to evaluate a condition
-    For loop: a loop that runs a number of times
+    the person is a kid
 
 
 
 ```python
-#6-4
-for key, value in glossary.items():
-    print(f"{key} : {value}")
+# 5-7
+favorite_fruits = ['apple', 'banana', 'strawberry']
+
+if 'apple' in favorite_fruits:
+    print("You really like apples!")
+if 'banana' in favorite_fruits:
+    print("You really like bananas!")
+if 'strawberry' in favorite_fruits:
+    print("You really like strawberries!")
+if 'orange' in favorite_fruits:
+    print("You really like oranges!")
+if 'watermelon' in favorite_fruits:
+    print("You really like watermelons!")
 ```
 
-    list : an array of items in order
-    dictionary : a non-ordered set of key-value pairs
-    print : a function to display data
-    if statement : a statement to evaluate a condition
-    for loop : a loop that runs a number of times
-    while loop : a loop that runs until a condition is met
-    function : a block of code that can be called
-    sort : a function to sort a list
-    strip : a function to remove chars from a string
-    fstring : a string that can be formatted
+    You really like apples!
+    You really like bananas!
+    You really like strawberries!
 
 
 
 ```python
-#6-5
-rivers = {'nile' : 'egypt',
-          'Yeongsan' : 'south korea',
-          'amazon' : 'brazil'}
+# 5-8
 
-for key, value in rivers.items():
-    print(f"The {key} runs through {value}.")
+usernames = ['admin', 'finn', 'sam', 'joe', 'david']
+
+for username in usernames:
+    if username == 'admin':
+        print("Hello admin, would you like to see a status report?")
+    else:
+        print("Hello " + username + ", thank you for logging in again.")
 ```
 
-    The nile runs through egypt.
-    The Yeongsan runs through south korea.
-    The amazon runs through brazil.
+    Hello admin, would you like to see a status report?
+    Hello finn, thank you for logging in again.
+    Hello sam, thank you for logging in again.
+    Hello joe, thank you for logging in again.
+    Hello david, thank you for logging in again.
 
 
 
 ```python
-#6-7
+# 5-9
 
-finn = {'first_name' : 'finn',
-        'last_name' : 'tekverk',
-        'age' : 21,
-        'city' : 'boston'}
+usernames = []
 
-josh = {'first_name' : 'josh',
-        'last_name' : 'kalet',
-        'age' : 21,
-        'city' : 'boston'}
-
-adam = {'first_name' : 'adam',
-        'last_name' : 'peters',
-        'age' : 21,
-        'city' : 'boston'}
-
-people = [finn, josh, adam]
-
-for person in people:
-    print(person)
-
+if len(usernames) == 0:
+    print("We need to find some users!")
 ```
 
-    {'first_name': 'finn', 'last_name': 'tekverk', 'age': 21, 'city': 'boston'}
-    {'first_name': 'josh', 'last_name': 'kalet', 'age': 21, 'city': 'boston'}
-    {'first_name': 'adam', 'last_name': 'peters', 'age': 21, 'city': 'boston'}
+    We need to find some users!
 
 
 
 ```python
-#6-8
+# 5-10
+current_users = ['admin', 'finn', 'sam', 'joe', 'david']
+new_users = ['finn', 'joe', 'adam', 'ryan', 'josh']
 
-sparky = {'animal' : 'dog',
-          'owner' : 'finn'}
-
-loona = {'animal' : 'cat',
-         'owner' : 'josh'}
-
-max = {'animal' : 'dog',
-       'owner' : 'adam'}
-
-meowmeow = {'animal' : 'cat',
-            'owner' : 'finn'}
-
-pets = [sparky, loona, max, meowmeow]
-
-for pet in pets:
-       print(pet)
+for new_user in new_users:
+    if new_user in current_users:
+        print("The username " + new_user + " has already been used. Enter a new username.")
+    else:
+        print("The username " + new_user + " is available.")
 ```
 
-    {'animal': 'dog', 'owner': 'finn'}
-    {'animal': 'cat', 'owner': 'josh'}
-    {'animal': 'dog', 'owner': 'adam'}
-    {'animal': 'cat', 'owner': 'finn'}
-
-
-
-```python
-#6-9
-
-favorite_places = { 'finn' : ['paris', 'sydney', 'tokyo'],
-                    'josh' : ['boston', 'new york', 'los angeles'],
-                    'adam' : ['seoul', 'tokyo', 'hong kong']
-                }
-
-for name, places in favorite_places.items():
-    print(f"{name}'s favorite places are:")
-    for place in places:
-        print(f"\t{place}")
-
-
-```
-
-    finn's favorite places are:
-    	paris
-    	sydney
-    	tokyo
-    josh's favorite places are:
-    	boston
-    	new york
-    	los angeles
-    adam's favorite places are:
-    	seoul
-    	tokyo
-    	hong kong
-
-
-
-```python
-#6-11
-
-cities = {'boston' : {'country' : 'united states',
-                      'population' : '4 million',
-                      'fact' : 'Tufts is nearby!'},
-
-          'tokyo' : {'country' : 'japan',
-                     'population' : '13 million',
-                     'fact' : 'located in southen Kanto'},
-
-          'paris' : {'country' : 'france',
-                     'population' : '2 million',
-                     'fact' : 'has the eiffel tower'}
-          }
-
-for city, info in cities.items():
-    print(f"{city.title()} has info {info}")
-```
-
-    Boston has info {'country': 'united states', 'population': '4 million', 'fact': 'Tufts is nearby!'}
-    Tokyo has info {'country': 'japan', 'population': '13 million', 'fact': 'located in southen Kanto'}
-    Paris has info {'country': 'france', 'population': '2 million', 'fact': 'has the eiffel tower'}
+    The username finn has already been used. Enter a new username.
+    The username joe has already been used. Enter a new username.
+    The username adam is available.
+    The username ryan is available.
+    The username josh is available.
 
