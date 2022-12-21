@@ -475,16 +475,16 @@ plt.show()
 
 
     
-![png](sentiment_analysis_files/positiveSentiment.png)
+![png](positiveSentiment.png)
     
     
-![png](sentiment_analysis_files/negativeSentiment.png)
+![png](negativeSentiment.png)
     
     
-![png](sentiment_analysis_files/neutralSentiment.png)
+![png](neutralSentiment.png)
 
     
-![png](sentiment_analysis_files/compoundSentiment.png)
+![png](compoundSentiment.png)
 
 
 
