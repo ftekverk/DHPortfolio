@@ -481,7 +481,7 @@ plt.show()
 ![png](negativeSentiment.png)
     
     
-![png](neutralSentiment.png)
+![png](nuetralSentiment.png)
 
     
 ![png](compoundSentiment.png)
